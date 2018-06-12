@@ -1,0 +1,80 @@
+/*   Basic tags & class
+ *   ---------------
+ */
+html, body, div, p, li, ul, form, set, h1, h2, h3, h4, h5, h6   { margin: 0; padding: 0; list-style: none; }
+.none     { display: none;}
+.hidden   { visibility: hidden;}
+.fl       { float: left !important;}
+.fr       { float: right !important;}
+.left     { text-align: left;}
+.right    { text-align: right;}
+.center   { text-align: center !important;}
+.bold     { font-weight: bold;}
+.italic   { font-style: italic;}
+.nomargin { margin: 0 !important;}
+img       { border: none;}
+a         { outline-style: none; }
+html, body    { height: 100%; }
+body          { letter-spacing: 0em; background: -webkit-linear-gradient(right, #76b852, #8DC26F); }
+ 
+/* -- Links -- */
+a, a:visited, a:active, a:link {  color: #000; text-decoration: underline; outline: none; }
+a:hover                        {  text-decoration: none; }
+
+/* -- Title -- */
+h1, h2 { font-weight: normal; }
+h1         { font-size: 2.750em; margin: 0 0 30px; }
+h2         { font-size: 2em; margin: 0 0 20px; }      
+
+/* Font & color
+ * ------------
+ */
+ 
+html { font-size:100%; }
+body { font: .750em Arial, sans-serif; }
+input, textarea { font: 1em Arial, sans-serif; }
+h1, h2, h3 { color: #201917; }
+
+#content, input, textarea { color: #404040;}
+
+/*  Layout
+ *  ------
+ */
+ 
+#main {
+  position: relative;
+  padding: 50px 0 0 0;
+  margin: 0; 
+  width: 100%;
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+}
+#content {
+  width: 600px;
+  margin: auto;
+}
+
+#form_name       { position: relative; display: block; z-index: 10; }
+
+/* -- form col -- */
+.form-col { float: left; }
+.form-col { float: right; }
+
+/* -- formBox -- */
+.formBox                  { position: relative; z-index: 1; background: #FFFFFF; margin: 0 auto; padding: 45px; text-align: center; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+.formBox fieldset         { padding: 0; margin: 0; border: none; }
+
+.formBox label                 { color: #aaa; text-align: left; font-size: 1.2em;}
+.formBox label.lab             { position: relative; display: block; font-weight: bold; margin: 0 0 6px 0; }
+.formBox label.lab .warning    { position: absolute; top: 0; right: 2px; display: block; width: 16px; height: 16px; background: url(../images/ico-warning.png) 0 0; }
+.formBox input.input           { height:35px; line-height:1.5em; font-size: 1.5em; margin-bottom:-1px; padding:9px 10px 8px; width: 234px; color: #000; border: 1px; background: #f2f2f2; box-sizing: border-box;}
+.formBox input:focus.input     { background: #f1f1f1; }
+.formBox input.checkbox        { border:0 none; float:none; margin:0 10px 0 0; width:auto; }
+
+.formBox .form-col        { float: left; height: 60px; margin-bottom: 10px; }
+.formBox .form-col-right  { float: right; }
+.formBox .form-col-check  { padding-top: 10px; height: 50px; }
+.formBox .submit { font-family: sans-serif; text-transform: uppercase; outline: 0; background: #4CAF50; width: 40%; border: 0; margin:15px; padding: 10px; color: #FFFFFF; font-size: 1.5em; -webkit-transition: all 0.3 ease; transition: all 0.3 ease; cursor: pointer; }
+
+.form-message .error    { border-color: #f3a48c; color: red;}
+
+
